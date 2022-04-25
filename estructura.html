@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estructura</title>
+    <style>
+        form {
+            /* Just to center the form on the page */
+            margin: 0 auto;
+            width: 400px;
+            }
+            </style>
+</head>
+<body>
+
+<form>  
+<!--<p>Nombre: <input type="text" name="nombre"></p>-->
+<div>
+    <label for="firstname">Nombre</label>
+    <input id="firstname" name="firstname" title="Es obligatorio que ingreses tu nombre" required>
+</div>
+<!--<p>Apellidos: <input type="text" name="apellidos" size="40"></p>-->
+<div>
+    <p>
+    <label for="lastname">Apellido</label>
+    <input id="lastname" name="lastname" title="Please provide also your lastname.">
+    </p>
+</div>
+<p>Ciudad: <input type="text" name="ciudad" size="20"></p>
+
+<div>
+    <p>
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" title="Es obligatorio que ingreses tu e-mail" required>
+    </p>
+</div>
+<!--<p>Usuario: <input type="text" name="usuario" maxlength="6"></p>-->
+<p>Contraseña: <input type="password" name="password" minlength="6"></p>
+<legend>Comentario</legend>
+<textarea name="texto" rows="4" cols="50"></textarea>
+<div></div>
+<input type="submit" value="Enviar" class="btn btn-primary">
+<input type="reset" value="Limpiar" class="btn btn-danger">
+</form>  
+   
+</body>
+</html>
